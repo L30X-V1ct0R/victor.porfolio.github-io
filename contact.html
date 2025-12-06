@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Victor — Contact Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Get in touch with Victor. Email, phone, and contact form available." />
+</head>
+<body>
+  <div class="site" id="top">
+    <header class="header" role="banner">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Victor's Portfolio">
+          <svg class="logo" viewBox="0 0 100 100" width="48" height="48" aria-hidden="true">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#00b3ff"/>
+                <stop offset="1" stop-color="#7b61ff"/>
+              </linearGradient>
+            </defs>
+            <circle cx="50" cy="50" r="46" fill="url(#g)"/>
+            <text x="50%" y="56%" text-anchor="middle" font-family="Poppins, sans-serif" font-size="40" fill="#fff" font-weight="700">V</text>
+          </svg>
+          <span class="brand-text">Victor</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-label="Open navigation">
+          <span class="hamburger"></span>
+        </button>
+        <nav class="nav" id="mainNav" role="navigation" aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="subjects.html">Subjects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      </div>
+    </header>
+    <main class="main" role="main">
+      <section id="contact" class="section container reveal">
+        <h2>📞 Contact Me</h2>
+        <div class="contact-grid">
+          <div>
+            <p><strong>Email:</strong> <a href="mailto:arakaza.victor31@ntare-louisenlund.org">arakaza.victor31@ntare-louisenlund.org</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+250788884326">+250 788 884 326</a></p>
+            <p><strong>Instagram:</strong> <a href="https://instagram.com/itzvictor4real" target="_blank" rel="noopener noreferrer">@itzvictor4real</a></p>
+            <p style="margin-top: 1.5rem; color: var(--muted);">Feel free to reach out! I'm always interested in discussing web development, collaborating on projects, or just having a chat about tech.</p>
+          </div>
+          <form class="contact-form" aria-label="Contact form">
+            <label>
+              <span class="label-text">Your name</span>
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
+            <label>
+              <span class="label-text">Your email</span>
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+            <label>
+              <span class="label-text">Message</span>
+              <textarea name="message" rows="4" placeholder="Write a short message" required></textarea>
+            </label>
+            <div class="form-actions">
+              <button class="btn" type="submit">Send Message</button>
+              <button class="btn btn-ghost" type="reset">Clear</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+      <p>© 2025 Victor | Designed with 💙.</p>
+      <p>All right reserved!</p>
+      <a class="back-top" href="#top" aria-label="Back to top">↑ Top</a>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

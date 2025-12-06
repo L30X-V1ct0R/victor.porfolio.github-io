@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Victor — About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Victor (Leo) — Learn more about my background, achievements, and passion for web development." />
+</head>
+<body>
+  <div class="site" id="top">
+    <header class="header" role="banner">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Victor's Portfolio">
+          <svg class="logo" viewBox="0 0 100 100" width="48" height="48" aria-hidden="true">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#00b3ff"/>
+                <stop offset="1" stop-color="#7b61ff"/>
+              </linearGradient>
+            </defs>
+            <circle cx="50" cy="50" r="46" fill="url(#g)"/>
+            <text x="50%" y="56%" text-anchor="middle" font-family="Poppins, sans-serif" font-size="40" fill="#fff" font-weight="700">V</text>
+          </svg>
+          <span class="brand-text">Victor</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-label="Open navigation">
+          <span class="hamburger"></span>
+        </button>
+        <nav class="nav" id="mainNav" role="navigation" aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="subjects.html">Subjects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      </div>
+    </header>
+    <main class="main" role="main">
+      <section id="about" class="section container reveal">
+        <h2>About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>👋 Hi, I'm Victor — an aspiring web developer who enjoys creating websites and learning new technologies. I'm passionate about coding and turning ideas into interactive experiences 🌐.</p>
+            <p>Outside of tech, basketball 🏀 and math ➕ are my thing. I've proudly won multiple math competitions and I love working on challenges that push my mind.</p>
+            <blockquote>✨ "Either you run the day, or the day runs you." — Jim Rohn</blockquote>
+          </div>
+          <aside class="about-stats" aria-hidden="true">
+            <div class="stat">
+              <strong>2+</strong>
+              <span>Completed Projects</span>
+            </div>
+            <div class="stat">
+              <strong>5</strong>
+              <span>Math Awards</span>
+            </div>
+            <div class="stat">
+              <strong>Learning</strong>
+              <span>Full-stack development</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+      <p>© 2025 Victor | Designed with 💙.</p>
+      <p>All right reserved!</p>
+      <a class="back-top" href="#top" aria-label="Back to top">↑ Top</a>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
