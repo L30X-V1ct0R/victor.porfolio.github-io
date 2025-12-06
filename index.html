@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Victor — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Victor (Leo) — aspiring software engineer & web developer. Portfolio with projects, skills and contact info." />
+</head>
+<body>
+  <div class="site" id="top">
+    <header class="header" role="banner">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Victor's Portfolio">
+          <svg class="logo" viewBox="0 0 100 100" width="48" height="48" aria-hidden="true">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#00b3ff"/>
+                <stop offset="1" stop-color="#7b61ff"/>
+              </linearGradient>
+            </defs>
+            <circle cx="50" cy="50" r="46" fill="url(#g)"/>
+            <text x="50%" y="56%" text-anchor="middle" font-family="Poppins, sans-serif" font-size="40" fill="#fff" font-weight="700">V</text>
+          </svg>
+          <span class="brand-text">Victor</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-label="Open navigation">
+          <span class="hamburger"></span>
+        </button>
+        <nav class="nav" id="mainNav" role="navigation" aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="subjects.html">Subjects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      </div>
+      <div class="hero">
+        <img src="https://i.postimg.cc/q7cT7nWF/1D3A4935.jpg" alt="Victor's Profile Picture" class="profile-pic" width="200" height="200">
+        <h1 class="hero-title">MEET LEO VICTOR <span class="emoji">😎🤙</span></h1>
+        <p class="hero-sub">An aspiring software engineer & web developer — I build clean, interactive websites.</p>
+        <div class="hero-cta">
+          <a class="btn" href="projects.html">View Projects</a>
+          <a class="btn btn-ghost" href="contact.html">Contact Me</a>
+        </div>
+      </div>
+    </header>
+    <main class="main" role="main">
+      <!-- Quick Stats Section -->
+      <section class="section container reveal">
+        <h2>🚀 Quick Overview</h2>
+        <div class="stats-grid">
+          <a href="projects.html" class="stat-card">
+            <h3>2+</h3>
+            <p>Completed Projects</p>
+          </a>
+          <a href="about.html" class="stat-card">
+            <h3>5</h3>
+            <p>Math Awards</p>
+          </a>
+          <a href="skills.html" class="stat-card">
+            <h3>6</h3>
+            <p>Skills Mastered</p>
+          </a>
+          <a href="about.html" class="stat-card">
+            <h3>100%</h3>
+            <p>Passion for Code</p>
+          </a>
+        </div>
+      </section>
+      <!-- Featured Projects Preview -->
+      <section class="section alt container reveal">
+        <h2>📋 Featured Projects</h2>
+        <p style="text-align: center; margin-bottom: 1.5rem; color: var(--muted);">Check out some of my recent work</p>
+        <div class="project-container">
+          <article class="project-card" tabindex="0">
+            <div class="project-content">
+              <h3>📎 Personal Portfolio</h3>
+              <p>My first-ever website, created using HTML and CSS. Took me 2 months to complete!</p>
+              <a class="project-link" href="projects.html">View All Projects →</a>
+            </div>
+          </article>
+          <article class="project-card" tabindex="0">
+            <div class="project-content">
+              <h3>🧶 Math Quiz App</h3>
+              <p>An interactive quiz app that challenges users with random math questions.</p>
+              <a class="project-link" href="projects.html">View All Projects →</a>
+            </div>
+          </article>
+          <article class="project-card" tabindex="0">
+            <div class="project-content">
+              <h3>🌐 Landing Page</h3>
+              <p>A smooth, modern landing page built to practice layout and design skills.</p>
+              <a class="project-link" href="projects.html">View All Projects →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- Useful Websites Section -->
+      <section id="websites" class="section alt container reveal">
+        <h2>🌐 Useful Websites</h2>
+        <p style="text-align: center; margin-bottom: 1.5rem; color: var(--muted);">Here are 6 websites that have helped me in my web development journey:</p>
+        <!-- Search Bar -->
+        <div class="search-container">
+          <input type="text" id="websiteSearch" class="search-input" placeholder="🔍 Search websites..." aria-label="Search websites">
+          <button class="search-btn" id="searchBtn">Search</button>
+        </div>
+        <!-- Websites Grid -->
+        <div class="websites-grid" id="websitesGrid">
+          <!-- Website Card 1 -->
+          <article class="website-card" data-name="google" data-category="search">
+            <div class="website-icon">🔍</div>
+            <h3>Google</h3>
+            <p>Search engine for finding information on the web</p>
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="website-link">Visit Website →</a>
+          </article>
+          <!-- Website Card 2 -->
+          <article class="website-card" data-name="codepen" data-category="coding">
+            <div class="website-icon">💻</div>
+            <h3>CodePen</h3>
+            <p>Platform for sharing and learning web development code</p>
+            <a href="https://www.codepen.io" target="_blank" rel="noopener noreferrer" class="website-link">Visit Website →</a>
+          </article>
+          <!-- Website Card 3 -->
+          <article class="website-card" data-name="flint" data-category="learning">
+            <div class="website-icon">📚</div>
+            <h3>Flint</h3>
+            <p>Educational platform for interactive learning and activities</p>
+            <a href="https://www.flint.com" target="_blank" rel="noopener noreferrer" class="website-link">Visit Website →</a>
+          </article>
+          <!-- Website Card 4 -->
+          <article class="website-card" data-name="youtube" data-category="learning">
+            <div class="website-icon">🎥</div>
+            <h3>YouTube</h3>
+            <p>Video platform for tutorials and educational content</p>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="website-link">Visit Website →</a>
+          </article>
+          <!-- Website Card 5 -->
+          <article class="website-card" data-name="wikipedia" data-category="reference">
+            <div class="website-icon">📖</div>
+            <h3>Wikipedia</h3>
+            <p>Free online encyclopedia with information on many topics</p>
+            <a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer" class="website-link">Visit Website →</a>
+          </article>
+          <!-- Website Card 6 -->
+          <article class="website-card" data-name="managebac" data-category="school">
+            <div class="website-icon">📋</div>
+            <h3>ManageBac</h3>
+            <p>School management and learning platform for students</p>
+            <a href="https://www.managebac.com" target="_blank" rel="noopener noreferrer" class="website-link">Visit Website →</a>
+          </article>
+        </div>
+        <!-- No Results Message -->
+        <div id="noResults" class="no-results" style="display: none; text-align: center; padding: 2rem; color: var(--muted);">
+          <p>❌ No websites found matching your search.</p>
+        </div>
+      </section>
+      <!-- Call to Action -->
+      <section class="section container reveal" style="text-align: center;">
+        <h2>🙋 Let's Work Together</h2>
+        <p style="margin-bottom: 1.5rem; color: var(--muted);">Interested in learning more about my work or collaborating on a project?</p>
+        <a class="btn" href="contact.html" style="display: inline-block;">Get In Touch</a>
+      </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+      <p>© 2025 Victor | Designed with 💙.</p>
+      <p>All right reserved!</p>
+      <a class="back-top" href="#top" aria-label="Back to top">↑ Top</a>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
